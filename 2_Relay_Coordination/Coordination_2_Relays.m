@@ -1,4 +1,4 @@
-% Gr·fico do Exemplo - CoordenaÁ„o 2 RelÈs
+% Gr√°fico do Exemplo - Coordena√ß√£o 2 Rel√©s
 clearvars
 close all
 clc
@@ -9,18 +9,18 @@ N_Reles = 2;
 CTI = 0.4;
 RTC = [300/5, 300/5];
 
-% Faltas m·x-mÌn
+% Faltas m√°x-m√≠n
 FC_max = [3115.0 2010.7];
 FC_min = [1741.3 1309.9];
 
-Icc_K1 = FC_max;    % modo m·x
-Icc_K2 = FC_min;    % modo mÌn
+Icc_K1 = FC_max;    % modo m√°x
+Icc_K2 = FC_min;    % modo m√≠n
 
 % Corrente de Carga
 n_pontos = 3001;
 I_grafico = 200:1:3200;
 
-% Ordem RelÈs Retaguarda
+% Ordem Rel√©s Retaguarda
 q = [1; 1];
 
 B1_ret = zeros(n_pontos,1);
@@ -43,7 +43,7 @@ for i = 1:n_pontos
     %B2_ret = Ai(q(2))/((FC_min(2)/(PS(q(2))*RTC(q(2))))^N(q(2))-1);
 end
 
-% Tempos de AtuaÁ„o
+% Tempos de Atua√ß√£o
 
 T_pri2 = x(1,2) * B2_pri;
 T_ret1 = x(1,1) * B1_ret;
@@ -61,7 +61,7 @@ semilogy(I_grafico,T_ret1)
 hold on
 line([2010.7 2010.7],ylim,'color','black','LineWidth',0.8)
 line([1309.9 1309.9 ],ylim,'color','black','LineWidth',0.8)
-title('CoordenaÁ„o de 2 RelÈs de Sobrecorrente')
+title('Coordena√ß√£o de 2 Rel√©s de Sobrecorrente')
 legend ('Tpri2','Tret1');
 
 t = toc;
