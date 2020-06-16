@@ -1,4 +1,4 @@
-# TCC
+# Conclusion Thesis Work
 Tabu Search Algorithm is developted in order to find a set of optimal values for Plug Settings (PS) and Dial Setting for a given number 
 of Overcurrent Relays (OCRs). The performance was compared to simpler methods as Linear Programming (given PS lowest possible values, the
 optimal Dial setting is obtained) and Heuristic (sort of a Hill Climbing algorithm, finds optimal values for both PS and Dial).
